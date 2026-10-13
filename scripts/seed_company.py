@@ -25,28 +25,21 @@ async def seed():
             return
 
         company = CompanyConfig(
-            name="My Company",
-            mission="Build products that make people's lives better.",
-            vision="Become the go-to solution in our market within 3 years.",
-            description="A SaaS platform that automates key business operations.",
-            target_market="Small and medium-sized businesses in North America.",
-            value_prop="Save 10+ hours per week by automating your marketing, sales, and support.",
-            pricing_model={"plans": [{"name": "Starter", "price": 49}, {"name": "Pro", "price": 149}]},
-            goals={"q1_2026": ["Hit $10K MRR", "Get 100 paying customers", "Launch v2 of product"]},
-            kpis={
-                "mrr_usd": 0,
-                "active_customers": 0,
-                "churn_rate": 0.0,
-                "cac_usd": 0,
-                "ltv_usd": 0,
-                "nps": 0,
-            },
-            website_url="https://yourcompany.com",
-            github_repo="yourorg/yourrepo",
-            product_type="SaaS",
-            industry="Technology",
-            timezone="UTC",
-            daily_cycle_hour=6,
+            name="TapReview",
+            mission="Help small businesses collect more Google reviews with a single NFC tap.",
+            vision="Every restaurant, cafe, and convenience store in India has a tap-to-review system at the counter.",
+            description="NFC tags pre-programmed to open customised Google review flows, with a management dashboard for business owners.",
+            target_market="Small businesses in India — restaurants, cafes, convenience stores.",
+            value_prop="Get 5x more Google reviews by making it effortless — customers tap, review, done in under 10 seconds.",
+            pricing_model={"plans": [{"name": "Starter", "price_inr": 999, "nfc_cards": 2}, {"name": "Business", "price_inr": 2499, "nfc_cards": 10}]},
+            goals={"2026": ["Validate product-market fit with 10 paying beta customers", "Launch in Mumbai and Pune", "Build waitlist of 500 businesses"]},
+            kpis={"mrr_inr": 0, "active_customers": 0, "nfc_cards_shipped": 0, "avg_reviews_per_card_per_month": 0},
+            website_url="https://tapreview.in",
+            github_repo="placeholder/tapreview",
+            product_type="Hardware + SaaS",
+            industry="Local Business Tech",
+            timezone="Asia/Kolkata",
+            daily_cycle_hour=10,
         )
         session.add(company)
         await session.commit()
