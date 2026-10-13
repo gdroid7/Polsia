@@ -1,7 +1,0 @@
-{
-  "task_id": "task-polsia-app-module",
-  "task_description": "Build the missing app/ Python module for the Polsia AI platform, configured for TapReview (NFC-to-Google-review SaaS for Indian small businesses). Includes housekeeping fixes, core infrastructure, 16 SQLAlchemy models, 5 services, 9 agent implementations, 9 API routers, and app/main.py.",
-  "status": "pending",
-  "feature_order": ["FEAT-001", "FEAT-002", "FEAT-003"],
-  "blocked_reason": null
-}
