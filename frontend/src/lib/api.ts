@@ -40,7 +40,7 @@ export type DashboardSummary = {
   tasks_today_pending: number;
   tasks_today_failed: number;
   active_agents: string[];
-  kpis: Record<string, unknown>;
+  kpis: Record<string, string | number | null | undefined>;
   last_report_date: string | null;
 };
 
