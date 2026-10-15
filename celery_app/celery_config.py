@@ -6,7 +6,7 @@ result_backend = settings.celery_result_backend
 task_serializer = "json"
 result_serializer = "json"
 accept_content = ["json"]
-timezone = "UTC"
+timezone = "Asia/Kolkata"
 enable_utc = True
 
 # Worker settings
